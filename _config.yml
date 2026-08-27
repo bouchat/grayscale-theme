@@ -1,29 +1,25 @@
 # Site settings
-title: Grayscale
+title: Braver Measures Consulting
 email: your-email@domain.com
 url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Research, strategy, and project leadership for values-driven organizations tackling complex problems"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#4fe4f5'
 
 # Footer settings
-footer: Your Website
+footer: Copyright Braver Measures Consulting 2026
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: https://twitter.com/SBootstrap
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: linkedin
+    url: https://linkedin.com/in/sbouchat
+  - title: instagram
+    url: https://www.instagram.com/necessaryevilcoaching
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: https://github.com/IronSummitMedia/startbootstrap
+    url: https://evidenceandevil.com
 
 # Build settings
 markdown: kramdown
