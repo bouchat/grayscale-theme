@@ -9,31 +9,53 @@
                 </div>
             </div>
         </div>
+  
         
-        <div class="cal"
-          id="calendar"
-          data-cal-link="bouchat/consultation"
-          data-cal-namespace="consultation"
-          data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'></div>
-          
-        <div>
-        <a href="" class="btn btn-default btn-lg" data-cal-link="bouchat/consultation" data-cal-namespace="consultation" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'>Start a Conversation</a>
-</div>
-        
-        <!-- Cal element-click embed code begins -->
-<script type="text/javascript">
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "consultation", {origin:"https://app.cal.com"});
-Cal.config = Cal.config || {};
-Cal.config.forwardQueryParams = true;
+<head>
+    <title>Popup on click of an element</title>
+    <meta charset="UTF-8" />
+    <script>
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init");
+    </script>
+  </head>
 
-// Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
-// data-cal-link="bouchat/consultation"
-// data-cal-namespace="consultation"
-// data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'
-
-Cal.ns.consultation("ui", {"theme":"dark","hideEventTypeDetails":true,"layout":"month_view"});
-</script>
-<!-- Cal element-click embed code ends -->
+  <body>
+    <button data-cal-link="bouchat/consultation" data-cal-namespace="consultation" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"}'>
+      Start a Conversation
+    </button>
+  </body>
         
+
     </section>
