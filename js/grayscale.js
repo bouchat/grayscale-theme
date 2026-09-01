@@ -201,3 +201,28 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".accordion button");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const expanded =
+              this.getAttribute("aria-expanded") === "true" || false;
+            const panel = document.getElementById(
+              this.getAttribute("aria-controls")
+            );
+
+            buttons.forEach((btn) => {
+              btn.setAttribute("aria-expanded", "false");
+              document.getElementById(
+                btn.getAttribute("aria-controls")
+              ).hidden = true;
+            });
+
+            if (!expanded) {
+              this.setAttribute("aria-expanded", "true");
+              panel.hidden = false;
+            }
+          });

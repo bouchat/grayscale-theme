@@ -37,10 +37,44 @@
 <div class="panel">
   <p>Lorem ipsum...</p>
 </div>-->
-<h2><button id="accordion-button-01" aria-controls="accordion-panel-01" aria-expanded="true">
-How do I sign up for newsletters?</button></h2>
-<div id="accordion-panel-01" aria-labelledby="accordion-button-01" class="accordion-panel">
-<p>Simply fill out our membership form and you'll start getting the newsletters straight away.</p>
+<h2>Frequently Asked Questions</h2>
+
+<div class="accordion">
+  <details>
+    <summary id="accordion1">What is an accordion?</summary>
+    <div id="panel1">
+      <p>An accordion is a UI component that allows users to expand and collapse sections of content.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary id="accordion2">How does it improve user experience?</summary>
+    <div id="panel2">
+      <p>Accordions help reduce clutter and make information easier to digest, enhancing the overall user experience.</p>
+    </div>
+  </details>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="accordion">      
+  <h3>
+    <button aria-expanded="false" aria-controls="panel1"
+    id="accordion1">What is an accordion?</button>
+  </h3>
+
+  <section id="panel1" aria-labelledby="accordion1" hidden>
+    <p>An accordion is a UI component that allows users to expand and collapse sections of content.</p>
+  </section>
+
+  <h3>
+    <button aria-expanded="false" aria-controls="panel2"
+    id="accordion2">How does it improve user experience?</button>
+  </h3>
+
+  <section id="panel2" aria-labelledby="accordion2" hidden>
+    <p>Accordions help reduce clutter and make information easier to digest, enhancing the overall user experience.</p>
+  </section>
 </div>
 
 
