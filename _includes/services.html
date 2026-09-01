@@ -38,24 +38,19 @@
   <p>Lorem ipsum...</p>
 </div>
 
-<div>
-  <button
-    id="header1"
-    role="button"
-    aria-expanded={isExpanded}
-    aria-controls="panel1"
-    onClick={toggle}
-  >
-    Accordion Header
-  </button>
-  <div
-    id="panel1"
-    role="region"
-    aria-labelledby="header1"
-    hidden={!isExpanded}
-  >
-    Accordion content
+
+<details>
+  <summary>Accordion Header</summary>
+  <div>
+    Accordion content goes here.
   </div>
-</div>
+</details>
+
+<details open>
+  <summary>Pre-expanded Item</summary>
+  <div>
+    This item starts expanded.
+  </div>
+</details>
 
     </section>
