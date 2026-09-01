@@ -37,4 +37,25 @@
 <div class="panel">
   <p>Lorem ipsum...</p>
 </div>
+
+<div>
+  <button
+    id="header1"
+    role="button"
+    aria-expanded={isExpanded}
+    aria-controls="panel1"
+    onClick={toggle}
+  >
+    Accordion Header
+  </button>
+  <div
+    id="panel1"
+    role="region"
+    aria-labelledby="header1"
+    hidden={!isExpanded}
+  >
+    Accordion content
+  </div>
+</div>
+
     </section>
