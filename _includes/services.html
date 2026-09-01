@@ -83,6 +83,7 @@
     margin: 0.5rem;
     max-width: 80rem;
     padding: 0.5rem;
+    text-align: left;
   }
 
   ul li:not(:last-of-type) {
@@ -114,17 +115,19 @@
   .custom-details summary::after {
     content: "\FF0B";
     margin-left: 0.5rem;
+    text-align: right;
   }
 
   .custom-details[open]>summary::after {
     content: "\FF0D";
+    text-align: right;
   }
 </style>
 
-<ul class="text-left">
+<ul>
   <li>
     <details class="custom-details" name="services">
-      <span><summary><h4>Section 1</h4></summary></span>
+      <summary><h4>Section 1</h4></summary>
       <p>This is the content of section 1.</p>
     </details>
   </li>
