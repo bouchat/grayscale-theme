@@ -83,7 +83,6 @@
     margin: 0.5rem;
     max-width: 80rem;
     padding: 0.5rem;
-    text-align: left;
   }
 
   ul li:not(:last-of-type) {
@@ -96,6 +95,7 @@
     /*border-radius: 0.3rem;*/
     border-bottom: 1px solid #f0f0f0;
     padding: 0.5rem;
+    text-align: left;
   }
 
   details p:last-of-type {
@@ -115,12 +115,12 @@
   .custom-details summary::after {
     content: "\FF0B";
     margin-left: 0.5rem;
-    text-align: right;
+    float: right;
   }
 
   .custom-details[open]>summary::after {
     content: "\FF0D";
-    text-align: right;
+    float: right;
   }
 </style>
 
