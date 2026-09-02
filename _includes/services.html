@@ -88,6 +88,14 @@
   ul li:not(:last-of-type) {
     margin-bottom: 1rem;
   }
+  
+ul li li {
+    list-style-type: circle;
+    margin: 1.5rem;
+    max-width: 80rem;
+    padding: 0.25rem;
+    font-size: 14px;
+  }
 
   details {
     background: #000000;
@@ -100,6 +108,7 @@
 
   details p:last-of-type {
     margin-bottom: 0;
+    font-size: 14px;
   }
 
   details summary {
@@ -130,7 +139,7 @@
 <ul>
   <li>
     <details class="custom-details" name="services">
-      <summary>OSINT, Research, and Data Analysis</summary>
+      <summary>OSINT, RESEARCH, AND DATA ANALYSIS</summary>
       <p>This is the content of section 1.</p>
     </details>
   </li>
@@ -142,7 +151,7 @@
   </li>
   <li>
     <details class="custom-details" name="faq">
-      <summary>Section 3 with a custom arrow</summary>
+      <summary>Project Leadership</summary>
       <ul>
                   <li>Provide strategic advice at project inception, defining the project approach and delivery strategy</li>
                   <li> Establish and manage project success criteria, including time, cost, quality, and performance objectives </li>
