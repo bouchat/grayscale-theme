@@ -9,5 +9,35 @@
                     </li>
                     {% endfor %}
                 </ul>
+                
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    :where(.nav, .gh-head-menu) .nav-linkedin a,
+    :where(.nav, .gh-head-menu) .nav-bluesky a,
+    :where(.nav, .gh-head-menu) .nav-instagram a 
+    :where(.nav, .gh-head-menu) .nav-ghost a {
+        font-size: 0 !important;
+    }
+
+    :where(.nav, .gh-head-menu) .nav-linkedin a::before,
+    :where(.nav, .gh-head-menu) .nav-bluesky a::before,
+    :where(.nav, .gh-head-menu) .nav-instagram a::before 
+    :where(.nav, .gh-head-menu) .nav-instagram a::before {
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    :where(.nav, .gh-head-menu) .nav-linkedin a::before {content: "\f08c"}
+    :where(.nav, .gh-head-menu) .nav-bluesky a::before {content: "\e671"}
+    :where(.nav, .gh-head-menu) .nav-instagram a::before {content: "\f16d"}
+    :where(.nav, .gh-head-menu) .nav-ghost a::before {content: "\f08c"}
+</style>
         </div>
     </footer>
