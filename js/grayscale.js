@@ -35,12 +35,12 @@ $("a").mouseup(function(){
     $(this).blur();
 })
 
-$(function () {
+/*$(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
-});
+});*/
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
@@ -190,46 +190,3 @@ function init() {
     });
 }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-<script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll(".accordion button");
-
-        buttons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const expanded =
-              this.getAttribute("aria-expanded") === "true" || false;
-            const panel = document.getElementById(
-              this.getAttribute("aria-controls")
-            );
-
-            buttons.forEach((btn) => {
-              btn.setAttribute("aria-expanded", "false");
-              document.getElementById(
-                btn.getAttribute("aria-controls")
-              ).hidden = true;
-            });
-
-            if (!expanded) {
-              this.setAttribute("aria-expanded", "true");
-              panel.hidden = false;
-            }
-          });
