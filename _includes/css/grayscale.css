@@ -451,7 +451,7 @@ h1 {
   position: relative;
 }
 
-.button--carousel {
+/*.button--carousel {
   position: absolute;
   top: 50%;
 
@@ -470,8 +470,8 @@ h1 {
 .button--next {
   right: 1.5rem;
 }
-
-carousel::scroll-button(*) {
+*/
+.carousel::scroll-button(*) {
   border: 0;
   font-size: 2rem;
   background: none;
@@ -480,43 +480,43 @@ carousel::scroll-button(*) {
   cursor: pointer;
 }
 
-carousel::scroll-button(*):hover,
-carousel::scroll-button(*):focus {
+.carousel::scroll-button(*):hover,
+.carousel::scroll-button(*):focus {
   opacity: 1;
 }
 
-carousel::scroll-button(*):active {
+.carousel::scroll-button(*):active {
   translate: 1px 1px;
 }
 
-carousel::scroll-button(*):disabled {
+.carousel::scroll-button(*):disabled {
   opacity: 0.2;
   cursor: unset;
 }
 
-carousel::scroll-button(left) {
+.carousel::scroll-button(left) {
   content: "◄" / "Previous";
 }
 
-carousel::scroll-button(right) {
+.carousel::scroll-button(right) {
   content: "►" / "Next";
 }
 
-carousel {
+.carousel {
   anchor-name: --my-carousel;
 }
 
-carousel::scroll-button(*) {
+.carousel::scroll-button(*) {
   position: absolute;
   position-anchor: --my-carousel;
 }
 
-carousel::scroll-button(left) {
+.carousel::scroll-button(left) {
   right: calc(anchor(left) - 70px);
   bottom: calc(anchor(bottom) + 13px);
 }
 
-carousel::scroll-button(right) {
+.carousel::scroll-button(right) {
   left: calc(anchor(right) - 70px);
   bottom: calc(anchor(bottom) + 13px);
 }
