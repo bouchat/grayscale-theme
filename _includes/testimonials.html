@@ -1,8 +1,10 @@
     <!-- Testimonials-->
+<section id="testimonials" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
     
-    
-<h1>What people are saying...</h1>
-<ul class="carousel">
+<h2>What people are saying...</h2>
+<ul class="carousel list-wrapper">
   <li class="testimony" data-accName="Item 1">
     <p>"I would sign up for any workshop, training, or skill-building session Sirus organizes in an instant, and it's my first thought of who to work with when I or any organization I'm part of needs to tackle something challenging, uncomfortable, or simply very important." -- Nat, Former Client</p>
   </li>
@@ -16,3 +18,28 @@
     <p>"Their knowledge runs deep, but what makes them stand out is how approachable and easy they are to work with. ... I can't recommend them enough." -- Mary, Current Client</p>
   </li>
 </ul>
+
+<!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+<button button onclick="handleClick('previous')" class="button--carousel button--previous" type="button">></button>
+  <button button onclick="handleClick('next')" class="button--carousel button--next" type="button">></button>
+
+   </div>
+        </div>
+    </section>
+
+<script>
+  const list = document.querySelector(".list");
+
+  // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+  const item = document.querySelector(".item");
+  const itemWidth = item.offsetWidth;
+
+  function handleClick(direction) {
+    // Based on the direction we call `scrollBy` with the item width we got earlier
+    if(direction === "previous") {
+      list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+    } else {
+      list.scrollBy({ left: itemWidth, behavior: "smooth" });
+    }
+  }
+</script>
