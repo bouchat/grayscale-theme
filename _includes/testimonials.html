@@ -20,14 +20,14 @@
 </ul>
 
 <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
-<button  class="button--carousel button--previous" type="button">➜</button>
-  <button  class="button--carousel button--next" type="button">➜</button>
+<button onclick="handleClick('previous')" class="button--carousel button--previous" type="button">➜</button>
+  <button onclick="handleClick('next')" class="button--carousel button--next" type="button">➜</button>
 
    </div>
         </div>
     </section>
 
-<!--<script>
+<script>
   const list = document.querySelector(".carousel");
 
   // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
@@ -42,4 +42,4 @@
       list.scrollBy({ left: itemWidth, behavior: "smooth" });
     }
   }
-</script>-->
+</script>
