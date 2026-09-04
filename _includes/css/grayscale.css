@@ -425,6 +425,7 @@ h1 {
 .testimony {
   list-style-type: none;
   background-color: #fff;
+  color: #000
   /*border: 1px solid #dddddd;*/
   padding: 20px;
 
