@@ -424,7 +424,7 @@ h1 {
 }
 .testimony {
   list-style-type: none;
-  background-color: #fff;
+  background-color: #000;
   /*border: 1px solid #dddddd;*/
   padding: 20px;
 
@@ -443,7 +443,7 @@ h1 {
 }
 
 .testimonial{
-  color: #000000;
+  color: #fff;
   text-align: left;
 }
 
