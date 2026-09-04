@@ -425,7 +425,6 @@ h1 {
 .testimony {
   list-style-type: none;
   background-color: #fff;
-  color: #000
   /*border: 1px solid #dddddd;*/
   padding: 20px;
 
@@ -441,6 +440,11 @@ h1 {
 }
 .testimony {
   scroll-snap-align: center;
+}
+
+.testimonial{
+  color: #000;
+  text-align: left;
 }
 
 .list-wrapper {
