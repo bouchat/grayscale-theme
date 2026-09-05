@@ -473,7 +473,7 @@ h1 {
 */
 .carousel::scroll-button(*) {
   border: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   background: none;
   color: white;
   opacity: 0.7;
@@ -512,11 +512,11 @@ h1 {
 }
 
 .carousel::scroll-button(left) {
-  right: calc(anchor(left) - 80px);
-  bottom: calc(anchor(bottom) + 15px);
+  right: calc(anchor(left) - 90px);
+  bottom: calc(anchor(bottom) + 18px);
 }
 
 .carousel::scroll-button(right) {
-  left: calc(anchor(right) - 80px);
-  bottom: calc(anchor(bottom) + 15px);
+  left: calc(anchor(right) - 90px);
+  bottom: calc(anchor(bottom) + 18px);
 }
