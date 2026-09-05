@@ -32,7 +32,7 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -513,10 +513,10 @@ h1 {
 
 .carousel::scroll-button(left) {
   right: calc(anchor(left) - 90px);
-  bottom: calc(anchor(bottom) + 22px);
+  bottom: calc(anchor(bottom) + 24px);
 }
 
 .carousel::scroll-button(right) {
   left: calc(anchor(right) - 90px);
-  bottom: calc(anchor(bottom) + 22px);
+  bottom: calc(anchor(bottom) + 24px);
 }
