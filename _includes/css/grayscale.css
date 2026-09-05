@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Saira","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
 }
@@ -514,10 +514,10 @@ h1 {
 
 .carousel::scroll-button(left) {
   right: calc(anchor(left) - 100px);
-  bottom: calc(anchor(bottom) + 30px);
+  bottom: calc(anchor(bottom) + 50px);
 }
 
 .carousel::scroll-button(right) {
   left: calc(anchor(right) - 100px);
-  bottom: calc(anchor(bottom) + 30px);
+  bottom: calc(anchor(bottom) + 50px);
 }
