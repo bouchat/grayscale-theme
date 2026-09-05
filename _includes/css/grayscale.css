@@ -514,7 +514,7 @@ h1 {
 
 .carousel::scroll-button(left) {
   right: calc(anchor(left) - 100px);
-  bottom: calc(anchor(bottom) + 50px);
+  bottom: calc(anchor(bottom) + 10px);
 }
 
 .carousel::scroll-button(right) {
