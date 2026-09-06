@@ -629,16 +629,17 @@ h1 {
 
 /* Fade in animation */
 .fade-in {
-	opacity: 1;
+	opacity: 0.2;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadeInOpacity {
-	40% {
-		opacity: .4;
+	20% {
+		opacity: .2;
 	}
 	100% {
 		opacity: 1;
