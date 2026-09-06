@@ -546,13 +546,15 @@ h1 {
   bottom: calc(anchor(bottom) + 10px);
 }
 
+
+
 /*new slideshow/carousel attempt*/
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -625,8 +627,26 @@ h1 {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
+/* Fade in animation */
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	40% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* old Fading animation */
+/*.fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -634,4 +654,4 @@ h1 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
+}*/
