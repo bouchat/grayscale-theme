@@ -569,7 +569,6 @@ h1 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  left: -8%;
   right: 100%;
   top: 50px;
   width: auto;
