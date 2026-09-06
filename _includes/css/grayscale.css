@@ -4,10 +4,34 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/MyFont-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+@font-face {
+  font-family: 'Guardian Sans Light';
+  src: url('/fonts/guardian-sans/GuardianSansLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('/fonts/saira/Saira-Light.ttf') format('ttf');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
     width: 100%;
     height: 100%;
-    font-family: "Saira","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Guardian Sans Light","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: lighter;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
