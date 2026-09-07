@@ -294,7 +294,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .work-with-me-section {
@@ -570,7 +570,7 @@ h1 {
 /* Slideshow container */
 .slideshow-container {
   max-width: 70%;
-  height: 250px;
+  height: 200px;
   position: relative;
   margin: auto;
 }
