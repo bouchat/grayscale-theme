@@ -79,7 +79,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: ##4fe4f5;
+    color: #4fe4f5;
 }
 
 .light {
@@ -202,6 +202,21 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 25px;
     }
+}
+
+.footer {
+  display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(/img/datamountains2-doublefademuted.png) no-repeat bottom center scroll;
+    background-color: {{ site.color.primary-dark }};
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .btn-circle {
@@ -328,7 +343,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -555,7 +570,7 @@ h1 {
 /* Slideshow container */
 .slideshow-container {
   max-width: 70%;
-  height: 200px;
+  height: 250px;
   position: relative;
   margin: auto;
 }
