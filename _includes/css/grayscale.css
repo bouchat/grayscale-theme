@@ -90,7 +90,7 @@ img.mob-img {
 }   
 @media screen and (max-width: 992px) {
   img.mob-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }          
 }
