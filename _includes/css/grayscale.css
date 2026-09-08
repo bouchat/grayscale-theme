@@ -96,6 +96,7 @@ img.dynamic-right {
     float: right;
     margin: 10px 20px 20px 20px;
 }
+
 @media screen and (max-width: 992px) {
     img.dynamic-right {
         display: block;
@@ -108,6 +109,7 @@ img.dynamic-left {
     float: left;
     margin: 10px 20px 20px 20px;
 }
+
 @media screen and (max-width: 992px) {
     img.dynamic-left {
         display: block;
