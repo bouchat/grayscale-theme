@@ -82,19 +82,38 @@ a:focus {
     color: #4fe4f5;
 }
 
-img.mob-img {
-  width: 300px;
-  height: 400px;
-  margin: 10px 20px 20px 20px;
-  padding: 4px;
-}   
+.img-container {
+    display: flex;
+    direction: rtl;
+}
 @media screen and (max-width: 992px) {
-  img.mob-img {
-    width: 100%;
-    height: auto;
-    margin: 10px 20px 20px 20px;
-  padding: 4px;
+  .img-container {
+      display: inline-block;
   }          
+}
+
+img.dynamic-right {
+    float: right;
+    margin: 10px 20px 20px 20px;
+}
+@media screen and (max-width: 992px) {
+    img.dynamic-right {
+        display: block;
+        margin: auto;
+        float: none;
+    }
+}
+
+img.dynamic-left {
+    float: left;
+    margin: 10px 20px 20px 20px;
+}
+@media screen and (max-width: 992px) {
+    img.dynamic-left {
+        display: block;
+        margin: auto;
+        float: none;
+    }
 }
 
 .light {
