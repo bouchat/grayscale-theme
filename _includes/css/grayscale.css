@@ -118,6 +118,15 @@ img.dynamic-left {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .slideshow-conainer {
+        max-width: 70%;
+        height: 250px;
+        position: relative;
+        margin: auto;
+    }
+}
+
 .light {
     font-weight: 400;
 }
