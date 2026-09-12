@@ -119,7 +119,7 @@ img.dynamic-left {
 }
 
 @media screen and (max-width: 992px) {
-    .slideshow-conainer {
+    .slideshow-container {
         max-width: 70%;
         height: 250px;
         position: relative;
