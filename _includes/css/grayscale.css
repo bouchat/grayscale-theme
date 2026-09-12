@@ -118,14 +118,7 @@ img.dynamic-left {
     }
 }
 
-@media screen and (max-width: 992px) {
-    .slideshow-container {
-        max-width: 70%;
-        height: 250px;
-        position: relative;
-        margin: auto;
-    }
-}
+
 
 .light {
     font-weight: 400;
@@ -618,6 +611,15 @@ h1 {
   height: 200px;
   position: relative;
   margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .slideshow-container {
+        max-width: 70%;
+        height: 250px;
+        position: relative;
+        margin: auto;
+    }
 }
 
 /* Hide the images by default */
